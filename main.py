@@ -116,7 +116,7 @@ def search_versions(query_text):
     for doc, meta in zip(results['documents'][0], results['metadatas'][0]):
         print("---\n", meta["timestamp"], "\n", doc[:500])
 
-# Main Orchestrator 
+
 def process_chapter(url):
     print(f"Scraping: {url}")
     chapter_text, screenshot = scrape_chapter(url)
